@@ -1,0 +1,61 @@
+/*Global*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Raleway", Sans-Serif;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  color: #fff;
+  font-size: 65px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: "Open Sans", Sans-Serif;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  color: #fff;
+  font-size: 30px;
+  margin: 48px 0 0 0;
+  text-transform: capitalize;
+}
+
+.splash-button {
+  background-color: #fcca29;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
