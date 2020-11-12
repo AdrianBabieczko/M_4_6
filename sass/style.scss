@@ -13,55 +13,91 @@ $font-header: "Open Sans", Sans-Serif;
 }
 
 body {
-    margin: 0;
-    text-align: center;
-    background: $color-light;
-    color: #3d3d3d;
-    font-size: 16px;
-    line-height: 1.7;
-    font-family: $font-text;
-  }
+  margin: 0;
+  text-align: center;
+  background: $color-light;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text;
+}
 
-  /* Splash */
-  .splash {
-    height: 100vh;
-    position: relative;
-    background-image: url("https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-  .splash-inner {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
 
-  .page-title {
-    color: $color-light;
-    font-size: 65px;
-    margin: 48px 0 0 0;
-    position: relative;
-    font-family: $font-header;
-    text-transform: uppercase;
-  }
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .page-subtitle {
-    color: $color-light;
-    font-size: 30px;
-    margin: 48px 0 0 0;
-    text-transform: capitalize;
-  }
+.page-title {
+  color: $color-light;
+  font-size: 65px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: $font-header;
+  text-transform: uppercase;
+}
 
-  .splash-button {
-      background-color:rgb(252, 202, 41);
-      border: none;
-      color: $color-light;
-      text-transform: uppercase;
-      width: 180px;
-      height: 50px;
-      font-size: 14px;
-  }
+.page-subtitle {
+  color: $color-light;
+  font-size: 30px;
+  margin: 48px 0 0 0;
+  text-transform: capitalize;
+}
+
+.splash-button {
+  background-color: rgb(252, 202, 41);
+  border: none;
+  color: $color-light;
+  text-transform: uppercase;
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+}
+
+/* Navigation */
+
+nav {
+  background-color: transparent;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: $color-light;
+}
